@@ -38,4 +38,24 @@ img {
 
 .wrapper__item {
   text-align: center;
+}
+
+.main-object {
+  display: inline-block;
+  width: 50%;
+}
+
+.main-object:hover {
+  animation-name: rotate;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(5200deg);
+  }
 }/*# sourceMappingURL=style.css.map */
