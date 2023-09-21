@@ -11,14 +11,34 @@
     font-weight: 400;
     line-height: normal;
     box-sizing: border-box;
+    border: 1px solid yellow;
 }
 
 html {
     font-size: 16px;
 }
+
 // add background img for body
 body {
     font-size: 1rem;
     background: url("../images/background.jpg") no-repeat center center fixed;
     background-size: cover;
+    font-size: 2rem;
+    color: yellow;
+}
+
+// for auto scale img
+img {
+    width: 100%;
+}
+
+.wrapper__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wrapper__item {
+    text-align: center;
 }
