@@ -40,6 +40,11 @@ img {
   text-align: center;
 }
 
+.wrapper__block {
+  display: flex;
+  flex-direction: row;
+}
+
 .main-object {
   display: inline-block;
   width: 50%;

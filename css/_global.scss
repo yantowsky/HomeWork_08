@@ -42,3 +42,8 @@ img {
 .wrapper__item {
     text-align: center;
 }
+
+.wrapper__block {
+    display: flex;
+    flex-direction: row;
+}
