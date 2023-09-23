@@ -1,50 +1,103 @@
-img.sun_body {
-    width: 60%;
-    z-index: 99;
-}
-
 .wrapper__item--body {
+    width: 50%;
+    display: flex;
     position: relative;
-}
+    justify-content: center;
+    z-index: 49;
 
-// rotation when pointing at an object
-.sun_body:hover {
-    animation-name: rotate;
-    animation-duration: 90s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
+    .element-body-up {
+        width: 22%;
+        position: absolute;
+        top: 35%;
+        z-index: 50;
     }
 
-    100% {
-        transform: rotate(5200deg)
+    .element-body-down {
+        width: 100%;
+        position: absolute;
+        bottom: 35%;
+        z-index: 50;
+
+        img.sun_mouth {
+            width: 20%;
+            transform: scaleX(-1);
+        }
+    }
+
+    // rotation when pointing at an object
+    .sun_body:hover {
+        animation-name: rotate;
+        animation-duration: 90s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(5200deg)
+        }
     }
 }
 
+.wrapper__line--mod {
+    display: flex;
+    justify-content: center;
+}
 
-.element-body-up {
-    width: 100%;
-    position: absolute;
-    top: 35%;
+.wrapper__item--hand-right {
+    padding-top: 35%;
+    width: 15%;
+    left: 7%;
+    transition: all 0.5s;
+}
+
+.wrapper__item--hand-left {
+    padding-top: 35%;
+    width: 15%;
+    right: 7%;
+    transition: all 0.5s;
+}
+
+
+.right_hand_four {
+    rotate: -75deg;
+}
+
+.left_hand_four {
+    transform: scaleX(-1);
+    rotate: 75deg;
+}
+
+.left_hand_like {
+    transform: scaleX(-1);
+}
+
+
+.wrapper__block-right_hand_like,
+.wrapper__block-left_hand_like {
+    display: none;
+}
+
+
+
+.wrapper__item--hand-right:active .wrapper__block-right_hand_four,
+.wrapper__item--hand-left:active .wrapper__block-left_hand_four {
+    display: none;
+}
+
+.wrapper__item--hand-right:active .wrapper__block-right_hand_like,
+.wrapper__item--hand-left:active .wrapper__block-left_hand_like {
+    display: block;
+}
+
+.wrapper__item--hand-right:active {
+    left: 17%;
     z-index: 50;
-
-    img.sun_eyes {
-        width: 12%;
-        // rotate: 10deg;
-    }
 }
-
-.element-body-down {
-    width: 100%;
-    position: absolute;
-    bottom: 35%;
+.wrapper__item--hand-left:active {
+    right: 17%;
     z-index: 50;
-
-    img.sun_mouth {
-        width: 12%;
-        transform: scaleX(-1);
-    }
 }

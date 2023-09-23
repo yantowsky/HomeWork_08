@@ -26,17 +26,18 @@ body {
     font-size: 2rem;
     color: yellow;
 }
+img {
+    width: 100%;
+}
 
-// // for auto scale img
-// img {
-//     width: 100%;
-// }
+.wrapper {
+    padding: 2%;
+}
 
 .wrapper__line {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
 }
 
 .wrapper__item {

@@ -2,7 +2,7 @@ img.player {
     width: 50%;
     z-index: 49;
     position: absolute;
-    padding-top: 2%;
+    padding-top: 1.8%;
 }
 
 img.vinyl {
@@ -14,4 +14,21 @@ img.vinyl {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.vinyl:hover {
+    animation-name: rotate_vinyl;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotate_vinyl {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-50200deg)
+    }
 }
