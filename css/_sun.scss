@@ -1,5 +1,6 @@
 img.sun_body {
     width: 60%;
+    z-index: 99;
 }
 
 .wrapper__item--body {
@@ -23,10 +24,6 @@ img.sun_body {
     }
 }
 
-img.sun_mouth {
-    width: 12%;
-    transform: scaleX(-1);
-}
 
 .element-body-up {
     width: 100%;
@@ -45,4 +42,9 @@ img.sun_mouth {
     position: absolute;
     bottom: 35%;
     z-index: 50;
+
+    img.sun_mouth {
+        width: 12%;
+        transform: scaleX(-1);
+    }
 }

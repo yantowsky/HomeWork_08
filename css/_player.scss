@@ -1,6 +1,17 @@
+img.player {
+    width: 50%;
+    z-index: 49;
+    position: absolute;
+    padding-top: 2%;
+}
 
+img.vinyl {
+    width: 40%;
+    z-index: 51;
+}
 
-.wrapper__item .wrapper__item--mod {
-    background: url("../images/player.png") no-repeat center center;
-    background-size: cover;
+.wrapper__item--mod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -10,6 +10,7 @@
   font-weight: 400;
   line-height: normal;
   box-sizing: border-box;
+  border: 1px solid yellow;
 }
 
 html {
@@ -22,10 +23,6 @@ body {
   background-size: cover;
   font-size: 2rem;
   color: yellow;
-}
-
-img {
-  width: 100%;
 }
 
 .wrapper__line {
@@ -47,6 +44,7 @@ img {
 
 img.sun_body {
   width: 60%;
+  z-index: 99;
 }
 
 .wrapper__item--body {
@@ -67,11 +65,6 @@ img.sun_body {
     transform: rotate(5200deg);
   }
 }
-img.sun_mouth {
-  width: 12%;
-  transform: scaleX(-1);
-}
-
 .element-body-up {
   width: 100%;
   position: absolute;
@@ -88,12 +81,29 @@ img.sun_mouth {
   bottom: 35%;
   z-index: 50;
 }
-
-img.speaker {
-  width: 70%;
+.element-body-down img.sun_mouth {
+  width: 12%;
+  transform: scaleX(-1);
 }
 
-.wrapper__item .wrapper__item--mod {
-  background: url("../images/player.png") no-repeat center center;
-  background-size: cover;
+img.speaker {
+  width: 100%;
+}
+
+img.player {
+  width: 50%;
+  z-index: 49;
+  position: absolute;
+  padding-top: 2%;
+}
+
+img.vinyl {
+  width: 40%;
+  z-index: 51;
+}
+
+.wrapper__item--mod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

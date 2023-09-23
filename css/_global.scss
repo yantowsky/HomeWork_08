@@ -11,7 +11,7 @@
     font-weight: 400;
     line-height: normal;
     box-sizing: border-box;
-    // border: 1px solid yellow;
+    border: 1px solid yellow;
 }
 
 html {
@@ -27,10 +27,10 @@ body {
     color: yellow;
 }
 
-// for auto scale img
-img {
-    width: 100%;
-}
+// // for auto scale img
+// img {
+//     width: 100%;
+// }
 
 .wrapper__line {
     display: flex;
