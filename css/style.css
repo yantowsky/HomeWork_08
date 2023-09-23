@@ -62,15 +62,50 @@ img {
   top: 35%;
   z-index: 50;
 }
-.wrapper__item--body .element-body-down {
-  width: 100%;
-  position: absolute;
-  bottom: 35%;
-  z-index: 50;
+.wrapper__item--body .sun_eyes_up {
+  display: none;
 }
-.wrapper__item--body .element-body-down img.sun_mouth {
+.wrapper__item--body .sunglasses {
+  display: none;
+}
+.wrapper__item--body .element-body-up:hover .sun_eyes_down {
+  display: none;
+}
+.wrapper__item--body .element-body-up:hover .sun_eyes_up {
+  display: block;
+}
+.wrapper__item--body .element-body-up:active .sun_eyes_up,
+.wrapper__item--body .element-body-up:active .sun_eyes_down {
+  display: none;
+}
+.wrapper__item--body .element-body-up:active {
+  position: absolute;
+  width: 70%;
+  rotate: 8deg;
+  top: 26%;
+}
+.wrapper__item--body .element-body-up:active .sunglasses {
+  display: block;
+}
+.wrapper__item--body .element-body-down {
   width: 20%;
+  position: absolute;
+  bottom: 32%;
+  z-index: 50;
   transform: scaleX(-1);
+}
+.wrapper__item--body .sun_mouth_angry {
+  display: none;
+}
+.wrapper__item--body .element-body-down:active .sun_mouth_smile {
+  display: none;
+}
+.wrapper__item--body .element-body-down:active .sun_mouth_angry {
+  display: block;
+}
+.wrapper__item--body .element-body-down:active {
+  transform: scaleX(-1);
+  bottom: 35%;
 }
 .wrapper__item--body .sun_body:hover {
   animation-name: rotate;
@@ -92,14 +127,14 @@ img {
 }
 
 .wrapper__item--hand-right {
-  padding-top: 35%;
+  padding-top: 33%;
   width: 15%;
   left: 7%;
   transition: all 0.5s;
 }
 
 .wrapper__item--hand-left {
-  padding-top: 35%;
+  padding-top: 33%;
   width: 15%;
   right: 7%;
   transition: all 0.5s;
@@ -141,10 +176,6 @@ img {
 .wrapper__item--hand-left:active {
   right: 17%;
   z-index: 50;
-}
-
-img.speaker {
-  width: 100%;
 }
 
 img.player {
