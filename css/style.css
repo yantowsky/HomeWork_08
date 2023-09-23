@@ -10,7 +10,6 @@
   font-weight: 400;
   line-height: normal;
   box-sizing: border-box;
-  border: 1px solid yellow;
 }
 
 html {
@@ -178,6 +177,12 @@ img {
   z-index: 50;
 }
 
+.wrapper__item--mod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img.player {
   width: 50%;
   z-index: 49;
@@ -190,18 +195,11 @@ img.vinyl {
   z-index: 51;
 }
 
-.wrapper__item--mod {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .vinyl:hover {
   animation-name: rotate_vinyl;
   animation-duration: 300s;
   animation-iteration-count: infinite;
 }
-
 @keyframes rotate_vinyl {
   0% {
     transform: rotate(0);
@@ -209,4 +207,8 @@ img.vinyl {
   100% {
     transform: rotate(-50200deg);
   }
+}
+
+.vinyl:active {
+  width: 70%;
 }/*# sourceMappingURL=style.css.map */

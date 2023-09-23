@@ -1,3 +1,9 @@
+.wrapper__item--mod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 img.player {
     width: 50%;
     z-index: 49;
@@ -10,25 +16,23 @@ img.vinyl {
     z-index: 51;
 }
 
-.wrapper__item--mod {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .vinyl:hover {
     animation-name: rotate_vinyl;
     animation-duration: 300s;
     animation-iteration-count: infinite;
 
+    @keyframes rotate_vinyl {
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(-50200deg)
+        }
+    }
 }
 
-@keyframes rotate_vinyl {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(-50200deg)
-    }
+.vinyl:active {
+    width: 70%;
 }
