@@ -1,10 +1,13 @@
-.main-object {
-    display: inline-block;
-    width: 50%;
-    // transition: all 2s;
+img.sun_body {
+    width: 60%;
 }
 
-.main-object:hover {
+.wrapper__item--body {
+    position: relative;
+}
+
+// rotation when pointing at an object
+.sun_body:hover {
     animation-name: rotate;
     animation-duration: 90s;
     animation-iteration-count: infinite;
@@ -18,4 +21,28 @@
     100% {
         transform: rotate(5200deg)
     }
+}
+
+img.sun_mouth {
+    width: 12%;
+    transform: scaleX(-1);
+}
+
+.element-body-up {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    z-index: 50;
+
+    img.sun_eyes {
+        width: 12%;
+        // rotate: 10deg;
+    }
+}
+
+.element-body-down {
+    width: 100%;
+    position: absolute;
+    bottom: 35%;
+    z-index: 50;
 }

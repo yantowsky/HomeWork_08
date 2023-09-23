@@ -10,7 +10,6 @@
   font-weight: 400;
   line-height: normal;
   box-sizing: border-box;
-  border: 1px solid yellow;
 }
 
 html {
@@ -37,6 +36,7 @@ img {
 }
 
 .wrapper__item {
+  position: relative;
   text-align: center;
 }
 
@@ -45,12 +45,15 @@ img {
   flex-direction: row;
 }
 
-.main-object {
-  display: inline-block;
-  width: 50%;
+img.sun_body {
+  width: 60%;
 }
 
-.main-object:hover {
+.wrapper__item--body {
+  position: relative;
+}
+
+.sun_body:hover {
   animation-name: rotate;
   animation-duration: 90s;
   animation-iteration-count: infinite;
@@ -63,4 +66,34 @@ img {
   100% {
     transform: rotate(5200deg);
   }
+}
+img.sun_mouth {
+  width: 12%;
+  transform: scaleX(-1);
+}
+
+.element-body-up {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  z-index: 50;
+}
+.element-body-up img.sun_eyes {
+  width: 12%;
+}
+
+.element-body-down {
+  width: 100%;
+  position: absolute;
+  bottom: 35%;
+  z-index: 50;
+}
+
+img.speaker {
+  width: 70%;
+}
+
+.wrapper__item .wrapper__item--mod {
+  background: url("../images/player.png") no-repeat center center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */

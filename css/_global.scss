@@ -1,4 +1,4 @@
-// RESET CSS
+// reset css
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
     font-weight: 400;
     line-height: normal;
     box-sizing: border-box;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
 }
 
 html {
@@ -40,6 +40,7 @@ img {
 }
 
 .wrapper__item {
+    position: relative;
     text-align: center;
 }
 
