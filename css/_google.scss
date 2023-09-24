@@ -1,0 +1,15 @@
+iframe {
+    width: 55%;
+    height: 28vw;
+    border-radius: 30px;
+    border: 8px solid #000;
+    box-shadow: -5px -9px 13px 3px #142142;
+    margin-bottom: 2%;
+}
+.wrapper__img--back {
+    width: 40%;
+}
+
+.wrapper__img--back:hover {
+    width: 50%;
+}
