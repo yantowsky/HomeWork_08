@@ -148,6 +148,15 @@
 .wrapper__item--youtube,
 .wrapper__item--google_maps {
     width: 10%;
+    .wrapper__img--youtube,
+    .wrapper__img--google_maps {
+        padding: 0 10%;
+        border-radius: 30px;
+        border: 8px solid #000;
+        box-shadow: -5px -9px 13px 3px #142142;
+        
+    }
+
 }
 
 .wrapper__item--youtube:hover .wrapper__img--youtube,
