@@ -53,7 +53,7 @@ img {
   display: flex;
   position: relative;
   justify-content: center;
-  z-index: 49;
+  z-index: 50;
 }
 .wrapper__item--body .element-body-up {
   width: 22%;
@@ -179,6 +179,12 @@ img {
 
 .wrapper__item--mod {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper__block-player {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -193,22 +199,14 @@ img.player {
 img.vinyl {
   width: 40%;
   z-index: 51;
+  transition: all 300s;
 }
 
-.vinyl:hover {
-  animation-name: rotate_vinyl;
-  animation-duration: 300s;
-  animation-iteration-count: infinite;
-}
-@keyframes rotate_vinyl {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(-50200deg);
-  }
+.wrapper__block-player:hover .vinyl {
+  transform: rotateZ(50000deg);
+  transition: all 100s;
 }
 
-.vinyl:active {
-  width: 70%;
+.wrapper__block-player:active .vinyl {
+  transform: none;
 }/*# sourceMappingURL=style.css.map */

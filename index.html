@@ -9,9 +9,6 @@
 </head>
 
 <body>
-    <audio preload="auto" loop autoplay src="./audio/house_of_pain _ jump_around.mp3">
-        Браузер не поддерживает воспроизведение звуковых медиафайлов
-    </audio>
     <div class="wrapper">
         <div class="wrapper__line wrapper__line--mod">
             <div class="wrapper__item wrapper__item--hand-right">
@@ -48,12 +45,22 @@
                 <img class="speaker" src="./images/speaker.png" alt="speaker_left">
             </div>
             <div class="wrapper__item wrapper__item--mod">
-                <img class="player" src="./images/player.png" alt="player_vinyl">
-                <img class="vinyl" src="./images/vinyl.png" alt="vinyl">
+                <div class="wrapper__block-player">
+                    <img class="player" src="./images/player.png" alt="player_vinyl">
+                    <img class="vinyl" src="./images/vinyl.png" alt="vinyl">
+                </div>
+                <div class="wrapper__block-controls">
+                    <audio preload="auto" controls src="./audio/house_of_pain _ jump_around.mp3">
+                        Браузер не поддерживает воспроизведение звуковых медиафайлов
+                    </audio>
+                </div>
             </div>
             <div class="wrapper__item wrapper__item--spec">
                 <img class="speaker" src="./images/speaker.png" alt="speaker_right">
             </div>
+        </div>
+        <div class="wrapper__line wrapper__line--spec">
+
         </div>
     </div>
 </body>
