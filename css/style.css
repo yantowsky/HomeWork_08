@@ -10,6 +10,7 @@
   font-weight: 400;
   line-height: normal;
   box-sizing: border-box;
+  border: 1px solid yellow;
 }
 
 html {
@@ -169,12 +170,28 @@ img {
 
 .wrapper__item--hand-right:active {
   left: 17%;
-  z-index: 50;
+  z-index: 51;
 }
 
 .wrapper__item--hand-left:active {
   right: 17%;
   z-index: 50;
+}
+
+.wrapper__item--youtube,
+.wrapper__item--google_maps {
+  width: 10%;
+}
+
+.wrapper__item--youtube:hover .wrapper__img--youtube,
+.wrapper__item--google_maps:hover .wrapper__img--google_maps {
+  background-color: #F6A900;
+}
+
+.wrapper__item--youtube:active .wrapper__img--youtube,
+.wrapper__item--google_maps:active .wrapper__img--google_maps {
+  width: 120%;
+  transition: all 0.5s;
 }
 
 .wrapper__item--mod {
