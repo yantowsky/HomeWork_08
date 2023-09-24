@@ -6,8 +6,10 @@ iframe {
     box-shadow: -5px -9px 13px 3px #142142;
     margin-bottom: 2%;
 }
+
 .wrapper__img--back {
     width: 40%;
+    transition: all 0.5s;
 }
 
 .wrapper__img--back:hover {

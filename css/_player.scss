@@ -19,7 +19,7 @@ img.player {
 
 img.vinyl {
     width: 40%;
-    z-index: 51;
+    z-index: 50;
     transition: all 300s;
 }
 
@@ -30,4 +30,12 @@ img.vinyl {
 
 .wrapper__block-player:active .vinyl {
     transform: none;
+}
+
+.wrapper__item--spec_left:active .speaker_left {
+    transform: skew(-5deg, 15deg);
+}
+
+.wrapper__item--spec_right:active .speaker_right {
+    transform: skew(5deg, -15deg);
 }
